@@ -49,7 +49,7 @@
 * (3 mth) & (4 mth) 12Mths Web Development Study [link](https://github.com/pittyh6/freeCodeCamp-responsive_web_design-3e4-12Mths-WebDevStudy-2022-2023) (freeCodeCamp (New) Responsive Web Design)
 * (4 mth) & (5 mth) 12Mths Web Development Study [link](https://github.com/pittyh6/freeCodeCamp-JavaScript-algorithms-and-data-structures-4_5-12Mths-WebDevStudy-2022-2023) (freeCodeCamp - JavaScript Algorithms and Data Structures)
 * (6 mth) 12Mths Web Development Study [link](https://github.com/pittyh6/job_listings_with_filtering_6-12Mths-WebDevStudy-2022-2023) (Job Listing - frontend Mentor Challenge)
-* (8 mth) 12Mths Web Development Study [link]()(Front End Development Libraries - freeCodeCamp)
+* (8 mth) 12Mths Web Development Study [link](https://github.com/pittyh6/front_end_dev_libraries-8-12Mths-webDevStudy-2022-2023)(Front End Development Libraries - freeCodeCamp)
 
 
 <!-- 
