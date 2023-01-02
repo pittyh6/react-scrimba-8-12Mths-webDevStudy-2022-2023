@@ -1,6 +1,6 @@
 # Web Developer Study
 ## 12 months web developer study. I decided to dedicate at least 12 months to learn web development.
-## Course Front End Development Libraries - freeCodeCamp
+## Course Learn React - Scrimba
 
 ![Begin Banner](/Documentation/top-1200x350.gif)
 
@@ -63,8 +63,8 @@
 
 <br>
 
-<p>The content belongs to <a href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp.</a> </p>
-<p>Do not use the files from my github account, but use the original content on the <a href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp.</a> website.</p>
+<p>The content belongs to <a href="https://scrimba.com" target="_blank">Scrimba.</a> </p>
+<p>Do not use the files from my github account, but use the original content on the <a href="https://scrimba.com/" target="_blank">Scrimba.</a> website.</p>
 
 <br>
 
