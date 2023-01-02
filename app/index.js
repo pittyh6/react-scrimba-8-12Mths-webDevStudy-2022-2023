@@ -10,3 +10,25 @@ ReactDOM.render(
     </ul>,
     document.getElementById('list')
 )
+
+//------------
+//Challenge 2 - create a component
+function TopContent(){
+    return(
+        <p>Top content</p>
+    )
+}
+function MainContent() {
+    return (
+        <h1> main content</h1>
+    )
+}
+ReactDOM.render( // render the component
+    <div>
+        <TopContent />
+        <MainContent />
+    </div>,
+    document.getElementById('mainContent')
+)
+
+//------------
