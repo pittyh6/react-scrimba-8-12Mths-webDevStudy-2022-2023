@@ -32,3 +32,13 @@ ReactDOM.render( // render the component
 )
 
 //------------
+
+//Challenge 3 - create a component with vanilla JS
+//imperative
+const challenge3 = document.getElementById("challenge3");
+const newEleH1 = document.createElement("h1")
+newEleH1.textContent = "Challenge 3 - imperative"
+newEleH1.classList.add("header")
+challenge3.appendChild(newEleH1)
+//declarative
+ReactDOM.render(<h1 class='header'>Challenge 3 - declarative</h1>, document.getElementById("challenge3"))
