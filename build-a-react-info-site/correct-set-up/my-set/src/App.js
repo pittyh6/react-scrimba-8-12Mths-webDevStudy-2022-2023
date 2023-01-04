@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react"
+import ReactDOM from "react-dom"
+
 
 function App() {
+  
+  const navbar = (
+      <nav>
+          <h1>Bob's Bistro</h1>
+          <ul>
+              <li>Menu</li>
+              <li>About</li>
+              <li>Contact</li>
+          </ul>
+      </nav>
+  )
+  
+  ReactDOM.render(navbar, document.getElementById("root"))
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <h1>oi</h1>
     </div>
   );
 }
