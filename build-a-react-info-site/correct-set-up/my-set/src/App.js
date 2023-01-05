@@ -3,7 +3,6 @@ import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
 function App() {
   //lesson 10
   const navbar = (
@@ -59,7 +58,7 @@ function App() {
     what you're trying to build.*/
   const challenge13 = (
     <div>
-      <img src={logo} alt="logo react" width="40px"/>
+      <img src={logo} alt="logo react" width="40px" />
       <h1>Fun facts about React</h1>
       <ul>
         <li>Was first released in 2013</li>
@@ -69,9 +68,39 @@ function App() {
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
     </div>
-  )
-  const chall13 = ReactDOM.createRoot(document.getElementById('challenge13'))
-  chall13.render(challenge13)
+  );
+  const chall13 = ReactDOM.createRoot(document.getElementById("challenge13"));
+  chall13.render(challenge13);
+
+  //----------------------------
+  //quiz 13
+  /*
+1. Why do we need to `import React from "react"` in our files?
+we need the dependencies React and React-dom
+also, npm and node installed
+* JSX syntax is defines in react
+
+2. If I were to console.log(page) in index.js, what would show up?
+a javaScript object
+
+3. What's wrong with this code:
+```
+const page = (
+    <h1>Hello</h1>
+    <p>This is my website!</p>
+)
+```
+You neet to wrap everything in ONE html element. You only can render ONE element.
+
+4. What does it mean for something to be "declarative" instead of "imperative"?
+imperative is when you have to give all the steps for the computer understand what it need to do. 
+Declarative is when you tell just what you want and the computer/compiler knows what to do.
+
+
+5. What does it mean for something to be "composable"?
+We have small pieces that we can put together to make something
+larger/greater than the individual pieces.
+*/
 }
 
 export default App;
