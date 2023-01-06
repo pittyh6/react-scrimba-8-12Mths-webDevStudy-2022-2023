@@ -124,7 +124,7 @@ function ComponentName() {
     </div>
   );
 }
-const lesson15 = ReactDOM.createRoot(document.getElementById('lesson15'))
+const lesson15 = ReactDOM.createRoot(document.getElementById("lesson15"));
 //lesson15.render(<ComponentName/>)
 
 //----------------------------
@@ -136,20 +136,54 @@ const lesson15 = ReactDOM.createRoot(document.getElementById('lesson15'))
   excited to be learning React :)
   Render your list to the page
 */
-function Challenge15(){
+function Challenge15() {
   return (
-      <div>
-        <ol>
-          <li>Get Back to work with IT</li>
-          <li>Start my journey in Development</li>
-          <li>Do what I am in love with</li>
-        </ol>
-      </div>
-  )
+    <div>
+      <ol>
+        <li>Get Back to work with IT</li>
+        <li>Start my journey in Development</li>
+        <li>Do what I am in love with</li>
+      </ol>
+    </div>
+  );
 }
-const chall15 = ReactDOM.createRoot(document.getElementById('challenge15'))
-chall15.render(<Challenge15 />);
+const chall15 = ReactDOM.createRoot(document.getElementById("challenge15"));
+//chall15.render(<Challenge15 />);
 
+//----------------------------
+//lesson 16 - challange 15 part 2
+/*
+  Part 2: 
+  - Add a `header` element with a nested `nav` element. Inside the `nav`,
+    include a `img` element with the image of the React logo inside
+    (src="./react-logo.png") and make sure to set the width to something
+    more manageable so it doesn't take up the whole screen
+  - Add an `h1` with some text describing the page. (E.g. "Reasons
+    I'm excited to learn React"). Place it above the ordered list.
+  - Add a `footer` after the list that says: 
+      "© 20xx <last name here> development. All rights reserved."
+*/
 
-
+function Challenge15P2() {
+  return (
+    <div>
+      <header>
+        <nav>
+          <img src={logo} alt="react logo" width="50px" />
+        </nav>
+      </header>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li>Get Back to work with IT</li>
+        <li>Start my journey in Development</li>
+        <li>Do what I am in love with</li>
+      </ol>
+      <footer>
+        <small>© 2023 Priscila development. All rights reserved.</small>
+        </footer>
+    </div>
+  );
+}
+const chall15p2 = ReactDOM.createRoot(document.getElementById("challenge15"));
+chall15p2.render(<Challenge15P2/>)
 export default App;
