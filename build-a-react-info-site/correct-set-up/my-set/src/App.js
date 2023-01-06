@@ -22,7 +22,7 @@ function App() {
   // change the way you render from (ReactDOM.render(navbar, document.getElementById("root"));)
   // to(ReactDOM.createRoot(document.getElementById("root")).render(navbar);)
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(navbar);
+  //root.render(navbar);
 
   //----------------------------
   //challenge 12
@@ -46,10 +46,10 @@ function App() {
       <p>react is awesome</p>
     </div>
   );
-  document.getElementById("challenge12").append(challenge12);
+  //document.getElementById("challenge12").append(challenge12);
   //challange 12.1 fixe the render from the above code to the bellow code
   const chal12 = ReactDOM.createRoot(document.getElementById("challenge12"));
-  chal12.render(challenge12);
+  //chal12.render(challenge12);
 
   //----------------------------
   //challenge 13
@@ -70,37 +70,86 @@ function App() {
     </div>
   );
   const chall13 = ReactDOM.createRoot(document.getElementById("challenge13"));
-  chall13.render(challenge13);
+  //chall13.render(challenge13); Just to no show in t he browser
 
   //----------------------------
-  //quiz 13
+  //quiz 1 - lesson 14
   /*
-1. Why do we need to `import React from "react"` in our files?
-we need the dependencies React and React-dom
-also, npm and node installed
-* JSX syntax is defines in react
+    1. Why do we need to `import React from "react"` in our files?
+    we need the dependencies React and React-dom
+    also, npm and node installed
+    * JSX syntax is defines in react
 
-2. If I were to console.log(page) in index.js, what would show up?
-a javaScript object
+    2. If I were to console.log(page) in index.js, what would show up?
+    a javaScript object
 
-3. What's wrong with this code:
-```
-const page = (
-    <h1>Hello</h1>
-    <p>This is my website!</p>
-)
-```
-You neet to wrap everything in ONE html element. You only can render ONE element.
+    3. What's wrong with this code:
+    ```
+    const page = (
+        <h1>Hello</h1>
+        <p>This is my website!</p>
+    )
+    ```
+    You neet to wrap everything in ONE html element. You only can render ONE element.
 
-4. What does it mean for something to be "declarative" instead of "imperative"?
-imperative is when you have to give all the steps for the computer understand what it need to do. 
-Declarative is when you tell just what you want and the computer/compiler knows what to do.
+    4. What does it mean for something to be "declarative" instead of "imperative"?
+    imperative is when you have to give all the steps for the computer understand what it need to do. 
+    Declarative is when you tell just what you want and the computer/compiler knows what to do.
 
 
-5. What does it mean for something to be "composable"?
-We have small pieces that we can put together to make something
-larger/greater than the individual pieces.
-*/
+    5. What does it mean for something to be "composable"?
+    We have small pieces that we can put together to make something
+    larger/greater than the individual pieces.
+    */
 }
+
+//----------------------------
+//lesson 15
+/*
+- The component needs to start with a uppercase letter
+- when you render the component you need to wrap in < ComponentName />
+*/
+function ComponentName() {
+  return (
+    <div>
+      <img src={logo} alt="logo react" width="40px" />
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 100K stars on Github</li>
+        <li>Is maintained by Facebook</li>
+        <li>Powers thousands of enterprise apps, including mobile apps</li>
+      </ul>
+    </div>
+  );
+}
+const lesson15 = ReactDOM.createRoot(document.getElementById('lesson15'))
+//lesson15.render(<ComponentName/>)
+
+//----------------------------
+//lesson 15 challenge 15
+/**
+  Challenge: 
+  Part 1: Create a page of your own using a custom Page component
+  It should return an ordered list with the reasons why you're
+  excited to be learning React :)
+  Render your list to the page
+*/
+function Challenge15(){
+  return (
+      <div>
+        <ol>
+          <li>Get Back to work with IT</li>
+          <li>Start my journey in Development</li>
+          <li>Do what I am in love with</li>
+        </ol>
+      </div>
+  )
+}
+const chall15 = ReactDOM.createRoot(document.getElementById('challenge15'))
+chall15.render(<Challenge15 />);
+
+
 
 export default App;
