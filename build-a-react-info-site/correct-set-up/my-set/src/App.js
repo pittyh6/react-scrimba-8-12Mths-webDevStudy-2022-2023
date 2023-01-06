@@ -180,10 +180,45 @@ function Challenge15P2() {
       </ol>
       <footer>
         <small>© 2023 Priscila development. All rights reserved.</small>
-        </footer>
+      </footer>
     </div>
   );
 }
 const chall15p2 = ReactDOM.createRoot(document.getElementById("challenge15"));
-chall15p2.render(<Challenge15P2/>)
+chall15p2.render(<Challenge15P2 />);
+
+//----------------------------
+//quiz 2 - lesson 17
+/*
+    Quiz!
+
+  1. What is a React component?
+  A function that returns React elements. (UI)
+
+  2. What's wrong with this code?
+  ```
+  function MyComponent() {
+      return (
+          <small>I'm tiny text!</small>
+      )
+  }
+  ```
+
+  3. What's wrong with this code?
+  ```
+  function Header() {
+      return (
+          <header>
+              <nav>
+                  <img src="./react-logo.png" width="40px" />
+              </nav>
+          </header>
+      )
+  }
+
+  ReactDOM.render(<Header />, document.getElementById("root"))
+  ```
+*/
+
+
 export default App;
