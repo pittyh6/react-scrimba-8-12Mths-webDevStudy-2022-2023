@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,30 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/*----------------------------------*/
+/*challenge 19 part 1
+- Using flexbox, line up the nav items horizontally, and
+  put them inline with the React logo.
+/*challenge 19 part 2
+- Change the image styling to happen in CSS instead of in-line
+  For practice, add a new class to the image in order to style it
+*/
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.nav-items{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items > li{
+  padding: 0 10px;
+}
+.logo-img{
+  width:80px;
+}
+

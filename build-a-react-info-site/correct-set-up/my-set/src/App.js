@@ -169,7 +169,7 @@ function Challenge15P2() {
     <div>
       <header>
         <nav>
-          <img src={logo} alt="react logo" width="50px" />
+          <img src={logo} alt="react logo" width="100px" />
         </nav>
       </header>
       <h1>Reasons I'm excited to learn React</h1>
@@ -185,7 +185,7 @@ function Challenge15P2() {
   );
 }
 const chall15p2 = ReactDOM.createRoot(document.getElementById("challenge15"));
-chall15p2.render(<Challenge15P2 />);
+//chall15p2.render(<Challenge15P2 />);
 
 //----------------------------
 //quiz 2 - lesson 17
@@ -219,6 +219,65 @@ chall15p2.render(<Challenge15P2 />);
   ReactDOM.render(<Header />, document.getElementById("root"))
   ```
 */
+
+//----------------------------
+//lesson 18 - challange
+/*
+  Mini Challenge: 1
+  Move the `header` element from Page into 
+  its own component called "Header"
+
+Challenge: 2
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
+function Header() {
+  return (
+    <header>
+      <nav className="nav-bar">
+        <img src={logo} alt="react logo" className="logo-img"/>
+        <ul className="nav-items">
+          <li className="item">Pricing</li>
+          <li className="item">About</li>
+          <li className="item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+function MainContent() {
+  return (
+    <div>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li>Get Back to work with IT</li>
+        <li>Start my journey in Development</li>
+        <li>Do what I am in love with</li>
+      </ol>
+    </div>
+  );
+}
+function Footer() {
+  return (
+    <footer>
+      <small>© 2023 Priscila development. All rights reserved.</small>
+    </footer>
+  );
+}
+function Challenge18() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+const chall18 = ReactDOM.createRoot(document.getElementById("challenge18"));
+chall18.render(<Challenge18 />);
 
 
 export default App;
