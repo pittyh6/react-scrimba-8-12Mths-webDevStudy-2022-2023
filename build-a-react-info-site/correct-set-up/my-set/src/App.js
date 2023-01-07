@@ -3,9 +3,10 @@ import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Header"
+import MainContent from "./MainContent"
+import Footer from "./Footer"
 
 function App() {
-  <Header/>
   //lesson 10
   const navbar = (
     <nav>
@@ -236,8 +237,21 @@ Challenge: 2
 - Move the `h1` and `ol` together into another component
   called "MainContent" and render inside Page as well.
 */
-
-function MainContent() {
+function Header1() {
+  return (
+    <header>
+      <nav className="nav-bar">
+        <img src={logo} alt="react logo" className="logo-img"/>
+        <ul className="nav-items">
+          <li className="item">Pricing</li>
+          <li className="item">About</li>
+          <li className="item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+function MainContent1() {
   return (
     <div>
       <h1>Reasons I'm excited to learn React</h1>
@@ -249,7 +263,7 @@ function MainContent() {
     </div>
   );
 }
-function Footer() {
+function Footer1() {
   return (
     <footer>
       <small>© 2023 Priscila development. All rights reserved.</small>
@@ -259,14 +273,29 @@ function Footer() {
 function Challenge18() {
   return (
     <div>
-      <Header />
-      <MainContent />
-      <Footer />
+      <Header1 />
+      <MainContent1 />
+      <Footer1 />
     </div>
   );
 }
 const chall18 = ReactDOM.createRoot(document.getElementById("challenge18"));
-chall18.render(<Challenge18 />);
+//chall18.render(<Challenge18 />);
 
 
+//----------------------------
+//lesson 20 - 
+// create file for each module.
+
+function Lesson20(){
+  return(
+    <div>
+      <Header /> 
+      <MainContent/>
+      <Footer/>
+    </div>
+  )
+}
+const lesson20 = ReactDOM.createRoot(document.getElementById("lesson20"))
+lesson20.render(<Lesson20 />);
 export default App;
