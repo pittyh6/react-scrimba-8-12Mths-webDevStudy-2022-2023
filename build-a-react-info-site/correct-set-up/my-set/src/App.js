@@ -2,8 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./Header"
 
 function App() {
+  <Header/>
   //lesson 10
   const navbar = (
     <nav>
@@ -234,20 +236,7 @@ Challenge: 2
 - Move the `h1` and `ol` together into another component
   called "MainContent" and render inside Page as well.
 */
-function Header() {
-  return (
-    <header>
-      <nav className="nav-bar">
-        <img src={logo} alt="react logo" className="logo-img"/>
-        <ul className="nav-items">
-          <li className="item">Pricing</li>
-          <li className="item">About</li>
-          <li className="item">Contact</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+
 function MainContent() {
   return (
     <div>
