@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.nav{
+    height: 70px;
+    box-shadow: 0px 0px 12px rgba(200, 195, 195, 0.658);
+}
+.nav-logo{
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
