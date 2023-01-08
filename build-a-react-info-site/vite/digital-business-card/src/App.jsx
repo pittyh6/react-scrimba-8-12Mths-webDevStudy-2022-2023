@@ -15,7 +15,7 @@ function Profile() {
     <div className="profile">
       <div className="profile-text">
         <img src={eu} alt="" className="profile-img"/>
-        <h1>Priscila Ferreira Bezerra</h1>
+        <h1>Priscila F. Pitty</h1>
         <h2>Frontend Developer</h2>
         <a href="https://github.com/pittyh6" className="profile-github-link">github/pittyh6</a>
       </div>
