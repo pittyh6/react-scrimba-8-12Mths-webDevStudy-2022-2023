@@ -7,10 +7,8 @@ import eu from "./assets/eu.jpg";
 import gitHub from "./assets/GitHub.png";
 import instagram from "./assets/Instagram.png";
 import twitter from "./assets/Twitter.png";
-import mail from "./assets/Mail.png";
 import { FaMailBulk } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { BsEnvelopeFill } from "react-icons/bs";
 
 function Profile() {
   return (
@@ -22,7 +20,7 @@ function Profile() {
         <a href="https://github.com/pittyh6" className="profile-github-link">github/pittyh6</a>
       </div>
       <div className="contact-btn">
-        <a href="https://github.com/pittyh6" target="_blank" className="contact contact-email"> <FaMailBulk/>Email</a>
+        <a href="https://github.com/pittyh6" target="_blank" className="contact contact-email"> <FaMailBulk/> Email</a>
         <a className="contact contact-linkedin" href="https://www.linkedin.com/in/priscila-bezerra-32181923/?locale=en_US" target="_"><FaLinkedin/>  LinkedIn</a>
       </div>
     </div>
