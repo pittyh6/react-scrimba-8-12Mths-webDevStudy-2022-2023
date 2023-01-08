@@ -1,9 +1,12 @@
 import React from "react";
-import Navbar from "/src/components/Navbar"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 export default function App() {
   return (
-    <Navbar/>
-  )
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
+  );
 }
-
