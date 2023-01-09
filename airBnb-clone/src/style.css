@@ -7,6 +7,14 @@ body {
   font-weight: 300;
   font-size: 1rem;
 }
+.container {
+  width: 90%;
+  margin: auto;
+}
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
 /* ------ navbar ------- */
 .nav {
   height: 70px;
@@ -19,23 +27,62 @@ body {
   left: 40px;
 }
 /* ------ hero ------- */
-.hero {
-  width: 90%;
-  margin: auto;
+.hero-img-parent {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
-.hero-img-parent{
+.hero-img {
+  width: 70%;
+}
+.hero-text {
+  width: 70%;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* ------ card ------- */
+.card{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 0.75rem;
+}
+.card-dot {
+  height: 4px;
+  width: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+.card-status{
+    position: relative;
+    bottom: 325px;
+    left: 20px;
+    background-color: #ffff;
+    color: #222222;
+    font-size: 0.65rem;
+    padding: 7px 15px;
+    border-radius:2px;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+.card-img{
+    position: relative;
+    left: -80px;
+    z-index: 0;
+}
+.card-star-info{
     display: flex;
-    justify-content: center;
-    padding: 50px;
 }
-.hero-img{
-    width: 70%;
+.card-img-star{
+    width: 15px;
+    height: 15px;
 }
-.hero-text{
-    width: 70%;
-}
-h1{
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 16px;
+.card-star-info p{
+    padding: 0 2px;
 }

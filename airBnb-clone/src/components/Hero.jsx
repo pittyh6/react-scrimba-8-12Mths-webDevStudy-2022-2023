@@ -3,7 +3,7 @@ import hero from "../assets/hero.png";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero container">
       <div className="hero-img-parent">
         <img src={hero} alt="hero img" className="hero-img" />
       </div>
