@@ -3,7 +3,7 @@ import hero from "../assets/hero.png";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero-img-parent">
         <img src={hero} alt="hero img" className="hero-img" />
       </div>
@@ -14,6 +14,6 @@ export default function Hero() {
           without leaving home.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
