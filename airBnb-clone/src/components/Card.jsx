@@ -22,7 +22,7 @@ Notes:
 
 export default function Card() {
   return (
-    <main className="card container">
+    <div className="card container">
       <span className="card-status">SOLD OUT</span>
       <img src={zaferes} alt="card big image" className="card-img" />
       <div className="card-star-info">
@@ -37,6 +37,6 @@ export default function Card() {
       <p className="card-price">
         <b>From $136 </b>  / person
       </p>
-    </main>
+    </div>
   );
 }
