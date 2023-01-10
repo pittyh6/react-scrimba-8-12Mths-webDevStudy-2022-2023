@@ -19,7 +19,7 @@ export default function Contact({img, name, phone, email}) { //destructuring way
   );
 }
 
-// CAN USE BOTH WAY.
+// CAN USE BOTH WAY. 
 
 // export default function Contact(props) { //function it has props receiving everything
 //     console.log(props)
