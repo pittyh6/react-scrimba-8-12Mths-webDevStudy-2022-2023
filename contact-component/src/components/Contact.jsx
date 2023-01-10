@@ -1,7 +1,7 @@
 import React from "react";
 import App from "../App";
 
-export default function Contact({img, name, phone, email}) {
+export default function Contact({img, name, phone, email}) { //destructuring way to receive props
 
   return (
     <div className="contact-card">
@@ -19,8 +19,9 @@ export default function Contact({img, name, phone, email}) {
   );
 }
 
+// CAN USE BOTH WAY.
 
-// export default function Contact(props) {
+// export default function Contact(props) { //function it has props receiving everything
 //     console.log(props)
 //   return (
 //     <div className="contact-card">
