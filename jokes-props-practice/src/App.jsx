@@ -1,13 +1,27 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import Joke from "./components/Jokes";
-
+import jokesData from "./components/jokesData";
+import Joke from "./components/Jokes"
 
 function App() {
+  console.log(jokesData[0])
+  const jokePunchline = jokesData.map(joke => {
+      return <Joke punchline={joke.punchline} setup={joke.setup}/>
+  })
+
   return (
     <div>
-      <Joke
+      {jokePunchline}
+      {jokesData.map(jokeSetup => <p>{jokeSetup.setup}</p>)}
+    </div>
+  );
+}
+
+export default App;
+
+/*
+<Joke
         punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally."
         isPun={true}
       />
@@ -39,8 +53,4 @@ function App() {
         punchline="I don't know, but the flag is a big plus!"
         isPun={false}
       />
-    </div>
-  );
-}
-
-export default App;
+*/
