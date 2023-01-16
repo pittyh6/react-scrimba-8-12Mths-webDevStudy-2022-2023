@@ -1,14 +1,12 @@
 import React from "react";
-import star from "../assets/star.png";
-import zaferes from "../assets/zaferes.png";
-import App from "../App";
+import star from "/public/images/star.png"; 
 
 
 export default function Card(props) {
   return (
     <div className="card container">
       <span className="card-status">SOLD OUT</span>
-      <img className="card-img" src= {`../src/assets/${props.img}`} />
+      <img className="card-img" src= {`../public/images/${props.img}`} />
       <div className="card-star-info">
         <img src={star} alt="card star image" className="card-img-star" />
         <p className="card-star-number">{props.rating}</p>

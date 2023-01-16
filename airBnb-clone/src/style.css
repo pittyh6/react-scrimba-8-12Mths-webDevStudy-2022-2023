@@ -59,7 +59,7 @@ h1 {
   position: relative;
   top: -5px;
 }
-.card-status{
+.card-status--{
     position: relative;
     bottom: 325px;
     left: 20px;
