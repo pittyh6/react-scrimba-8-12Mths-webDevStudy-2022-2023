@@ -21,14 +21,15 @@ export default function App() {
     return (
       <Card
       key={item.id}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        country={item.location}
-        titles={item.title}
-        price={item.price}
-        openSpots = {item.openSpots}
-        location = {item.location}
+      item={item}
+        // img={item.coverImg}
+        // rating={item.stats.rating}
+        // reviewCount={item.stats.reviewCount}
+        // country={item.location}
+        // titles={item.title}
+        // price={item.price}
+        // openSpots = {item.openSpots}
+        // location = {item.location}
       />
     );
   });
