@@ -33,7 +33,7 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
-      {cards}
+      <section className="card-list">{cards}</section>
     </div>
   );
 }

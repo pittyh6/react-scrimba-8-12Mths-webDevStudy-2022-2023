@@ -46,9 +46,20 @@ h1 {
 
 /* ------ card ------- */
 .card{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 0.75rem;
+  width: 175px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  font-size: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+.card-list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    margin-bottom: 150px;
 }
 .card-dot {
   height: 4px;
@@ -59,10 +70,11 @@ h1 {
   position: relative;
   top: -5px;
 }
-.card-status--{
+.card-status{
     position: relative;
-    bottom: 325px;
-    left: 20px;
+    bottom: -30px;
+    left: 10px;
+    width: fit-content;
     background-color: #ffff;
     color: #222222;
     font-size: 0.65rem;
@@ -71,10 +83,17 @@ h1 {
     letter-spacing: 0.05em;
     z-index: 2;
 }
+
+
 .card-img{
-    position: relative;
+    /* position: relative;
     left: -80px;
-    z-index: 0;
+    z-index: 0; */
+    max-width: max-content;
+    border-radius: 9px;
+    margin-bottom: 9px;
+    width: 350px;
+    height: 350px;
 }
 .card-star-info{
     display: flex;
