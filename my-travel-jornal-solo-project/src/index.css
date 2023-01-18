@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-size:1rem;
+
+}
+.header{
+    height: 100px;
+    background-image: linear-gradient(75deg, rgb(170, 89, 89),rgba(194, 94, 212, 0.738),rgba(241, 240, 160, 0.884),rgba(84, 194, 131, 0.792), rgba(0, 170, 255, 0.612)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: rgba(255, 0, 136, 0.386) 1px 0 10px;
+}
+
