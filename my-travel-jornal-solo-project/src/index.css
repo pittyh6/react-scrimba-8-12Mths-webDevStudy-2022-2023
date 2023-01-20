@@ -5,7 +5,7 @@
 body{
     box-sizing: border-box;
     font-size:1rem;
-
+    font-family: sans-serif;
 }
 .header{
     height: 100px;
@@ -16,4 +16,25 @@ body{
     color: #fff;
     text-shadow: rgba(255, 0, 136, 0.386) 1px 0 10px;
 }
-
+.main{
+    background-color: rgba(230, 147, 92, 0.127);
+    height: 100vh;
+}
+.trip{
+    width:80%;
+    margin: auto;
+    display: flex;
+    padding:30px;
+}
+.img-trip{
+    width: 25%;
+}
+.infos{
+    padding: 20px 30px;
+}
+.location{
+    display: flex;
+}
+.location>*{
+    margin: auto 7px;
+}
