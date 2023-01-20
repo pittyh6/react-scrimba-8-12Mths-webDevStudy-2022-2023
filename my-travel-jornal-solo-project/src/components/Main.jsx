@@ -12,7 +12,7 @@ export default function Main(props) {
       />
       <div className="infos">
         <div className="location">
-          <img src={pin} alt="image pin location" />
+          <img className="pin" src={pin} alt="image pin location" />
           <h2>{props.location}</h2>
           <a href={props.googleMapsUrl}>View on Google Maps</a>
         </div>
