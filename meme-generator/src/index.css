@@ -16,15 +16,14 @@ header{
     color: #fff;
     padding: 0 40px;
 }
-.imgTroll{
+.header-imgTroll{
     width: 31px;
     margin-right: 10px;
 }
-h1{
+.header-project{
     font-size:1.3rem;
     font-weight: 500;
 }
-p{
-    position:absolute;
-    right: 40px;
+.header-title{
+    margin-right: auto;
 }
