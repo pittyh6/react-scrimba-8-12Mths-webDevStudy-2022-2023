@@ -3,7 +3,8 @@ import memesData from "../memesData";
 
 export default function Meme() {
   function getMemeImg(){
-    console.log(memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)].url)
+    const urlImg = memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)].url
+    console.log(urlImg)
   }
   return (
     <main className="meme-form">
