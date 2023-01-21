@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import Header from '../src/components/Header'
 
 function App() {
 
   return (
-    <h1>Test</h1>
+    <Header/>
   )
 }
 
