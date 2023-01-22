@@ -7,8 +7,7 @@ export default function Ternary(){
      */
      const isGoingOut = true
     
-     let answer  // Use ternary here
-     answer = isGoingOut ? "Yes" : "No"
+     let answer = isGoingOut ? "Yes" : "No"
     
      
      return (
