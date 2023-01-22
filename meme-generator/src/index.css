@@ -62,3 +62,7 @@ header{
     font-family: 'Karla', sans-serif;
     cursor: pointer;
 }
+/* IMAGE MEME */
+.meme-image{
+  width: 100%;
+}
