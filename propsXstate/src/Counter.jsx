@@ -9,9 +9,11 @@ export default function Counter() {
     let ev = event.target.className
     console.log(ev)
     if(ev == "counter--minus"){
-        setCountTrack(countTrack - 1)
+        setCountTrack(function(prevCountTrack){
+            return prevCountTrack -1
+        })
     }else{
-        setCountTrack(countTrack + 1)
+        setCountTrack(prevCountTrack => prevCountTrack + 1)
     }
   
   }
