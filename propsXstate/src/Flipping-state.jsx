@@ -8,11 +8,12 @@ export default function FlippingState(){
      *   boolean value (true -> false, false -> true)
      * - Display "Yes" if `isGoingOut` is `true`, "No" otherwise
      */
-    const [isGoingOut, setIsGoingOut] = React.useState("Yes")
+    const [isGoingOut, setIsGoingOut] = React.useState(true)
 
     const answer = false
     function goingOut(){
-        answer ? setIsGoingOut("Yes") : setIsGoingOut("No")
+        setIsGoingOut(prevState => !prevState)
+        //answer ? setIsGoingOut("Yes") : setIsGoingOut("No")
             // if(answer == true){
             //     setIsGoingOut("Yes")
             // }else{
@@ -24,7 +25,7 @@ export default function FlippingState(){
         <div className="state">
             <h1 className="state--title">Do I feel like going out tonight?</h1>
             <div className="state--value" onClick={goingOut}>
-                <h1>{isGoingOut}</h1>
+                <h1>{isGoingOut ? "Yes" : "No"}</h1>
             </div>
         </div>
     )
