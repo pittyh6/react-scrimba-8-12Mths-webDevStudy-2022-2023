@@ -18,7 +18,12 @@ export default function StateObject(){
     let starIcon = contact.isFavorite ? "wink.png" : "hearts.png";
 
     function toggleFavorite() {
-        console.log("Toggle Favorite")
+        setContact(prevContact => {
+            return {
+                ...prevContact,
+                isFavorite: !prevContact.isFavorite
+            }
+        })
     }
     
     return (
