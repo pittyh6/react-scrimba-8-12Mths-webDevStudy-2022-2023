@@ -1,6 +1,5 @@
 import React from "react";
-import wink from "../public/wink.png";
-import heart from "../public/hearts.png";
+
 
 export default function StateObject(){
     const [contact, setContact] = React.useState({
@@ -16,7 +15,7 @@ export default function StateObject(){
      * (Ignore `isFavorite` for now)
      */
     
-    let starIcon = contact.isFavorite ? wink : heart;
+    let starIcon = contact.isFavorite ? "wink.png" : "hearts.png";
 
     function toggleFavorite() {
         console.log("Toggle Favorite")
@@ -28,7 +27,7 @@ export default function StateObject(){
                 <img src="./images/user.png" className="card--image" />
                 <div className="card--info">
                     <img 
-                        src={starIcon} 
+                        src={`../public/${starIcon}`}
                         className="card--favorite"
                         onClick={toggleFavorite}
                     />
