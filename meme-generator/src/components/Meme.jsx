@@ -2,11 +2,21 @@ import React from "react";
 import memesData from "../memesData";
 
 export default function Meme() {
-  const [memeImage, setMemeImage] = React.useState("")
+  const [memeImage, setMemeImage] = React.useState("http://i.imgflip.com/1bij.jpg")
+  const meme = {
+    topText: "",
+    bottomText: "",
+    randomImage: "http://i.imgflip.com/1bij.jpg"
+  }
+  const allMemeImages = memesData
+
   function getMemeImg(){
-    const urlImg = memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)].url
+    //const urlImg = memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)].url
+    const urlImg = allMemeImages
+    console.log(allMemeImages)
     setMemeImage(urlImg)
   }
+
   return (
     <main className="meme-form">
       <div className="form">
