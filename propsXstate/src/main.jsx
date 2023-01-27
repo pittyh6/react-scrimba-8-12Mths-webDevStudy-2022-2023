@@ -8,9 +8,9 @@ import FlippingState from './flipping-state'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Counter />
     <FlippingState />
     <App />
-    <Counter />
     <Ternary />
   </React.StrictMode>,
 )
