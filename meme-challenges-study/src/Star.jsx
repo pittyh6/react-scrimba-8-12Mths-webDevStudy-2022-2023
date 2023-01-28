@@ -6,7 +6,7 @@ const starIcon = props.isFilled ? "wink.png" : "hearts.png";
     <img
       src={`../public/${starIcon}`}
       className="card--favorite"
-      //onClick={toggleFavorite}
+      onClick={props.handleClick}
     />
   );
 }
