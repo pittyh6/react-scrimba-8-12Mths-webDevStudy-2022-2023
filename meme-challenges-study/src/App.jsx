@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 
 import Header from "./Header"
 import Body from "./Body"
+import AppBox from "./AppBox";
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
       <button onClick={addItem}>Add Item</button>
       {thingsElements}
       <main>
+            <AppBox/>
             <Header user={user}/>
             <Body user={user}/>
         </main>
