@@ -25,7 +25,7 @@ function App() {
       <button onClick={addItem}>Add Item</button>
       {thingsElements}
       <main>
-            <AppBox/>
+            {/* <AppBox/> */}
             <Header user={user}/>
             <Body user={user}/>
         </main>
