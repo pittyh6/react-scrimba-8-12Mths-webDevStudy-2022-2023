@@ -1,13 +1,16 @@
 import React from "react";
-import App from "../App"
+import App from "../App";
 
 export default function Jokes(props) {
-    console.log(props.comments)
+  function toggleShown() {
+    setIsShown((prevShown) => !prevShown);
+  }
   return (
-    
     <div>
-      {props.setup && <h1>{props.setup}</h1>}
-      <h3>{props.punchline}</h3>
+      {props.setup && <h3>{props.setup}</h3>}
+      {isShown && <p>{props.punchline}</p>}
+      <button onClick={toggleShown}>Show Punchline</button>
+      <hr />
     </div>
   );
 }
