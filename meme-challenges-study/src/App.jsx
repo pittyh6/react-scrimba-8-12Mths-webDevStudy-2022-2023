@@ -7,7 +7,7 @@ import ReactDOM from "react-dom";
 import Header from "./Header"
 import Body from "./Body"
 import AppBox from "./AppBox";
-
+import Message from "./Message"
 function App() {
   
   const [thingsArray,setThingsArray] = React.useState(["Thing 1", "Thing 2"]);
@@ -28,6 +28,7 @@ function App() {
             {/* <AppBox/> */}
             <Header user={user}/>
             <Body user={user}/>
+            <Message/>
         </main>
     </div>
     
